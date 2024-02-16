@@ -3,7 +3,7 @@ name: Deployment
 on:
   push:
     branches:
-      - main
+      - deepan
 
 jobs:
   deploy_to_development:
