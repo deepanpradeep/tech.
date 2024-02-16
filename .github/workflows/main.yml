@@ -3,7 +3,7 @@ name: Deployment
 on:
   push:
     branches:
-      - deepan
+      - main
 
 jobs:
   deploy_to_development:
@@ -17,12 +17,8 @@ jobs:
         run: |
           echo "Deploying to development branch"
          
-  deploy_to_deepan:
-    runs-on: ubuntu-latest
-    needs: [deploy_to_development]
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+  
+     
 
 
    
